@@ -1,0 +1,5 @@
+﻿1. In App Service, Go to Identity and add click Save in "System assigned".
+2. In Access Policies of keyvault, give access to the application in app service. 
+3. In Configuration, create a new app settings configuration and add below details in the value section
+@Microsoft.KeyVault(SecretUri={url of the keyvault secret available in properties of respective secret})
+4. Happy to read values of secret in code from IConfiguration.
